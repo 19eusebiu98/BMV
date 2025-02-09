@@ -1,0 +1,172 @@
+
+h1 {
+
+  color: 	#ff2644;
+  text-shadow: 4px 4px 5px black, 0 1px black, 1px 0 black, 0 -1px black;
+  
+  font-size:60px;
+  font-weight:bold;
+}
+
+img{
+	
+	filter: drop-shadow(4px 4px 5px black);
+}
+
+.justificarContenido{
+	display:grid;
+	justify-content: center;
+}
+
+.centrar{
+	text-align: center;
+	margin-top:70px;
+}
+
+.boton{
+	font-size:35px;
+	margin: 20px 20px 0px;
+	filter: drop-shadow(4px 4px 5px black);
+}
+
+.timer{
+	width:100%;
+	height:100%;
+    text-align: center;
+    position: absolute;
+	font-size:60px;
+	color: 	#ff2644;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	background-color: rgba(0,0,0, 0.8);
+	padding:15%;
+	display:none;
+	font-weight:bold;
+	text-shadow: 4px 4px 5px black, 0 1px black, 1px 0 black, 0 -1px black;
+	z-index:2
+}
+
+.final{
+	width:100%;
+	height:100%;
+    text-align: center;
+    position: absolute;
+	font-size:60px;
+	color: 	#ff2644;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	padding:15%;
+	display:none;
+	font-weight:bold;
+	text-shadow: 4px 4px 5px black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.intro{
+	width:100%;
+	height:100%;
+    text-align: center;
+    position: absolute;
+	font-size:60px;
+	color: 	#ff2644;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	padding:15%;
+	display:block;
+	background-color: black;
+	font-weight:bold;
+	text-shadow: 4px 4px 5px black, 0 1px black, 1px 0 black, 0 -1px black;
+	z-index:1;
+	animation-name: desaparecer;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+	animation-delay: 8s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes desaparecer {
+  0%   {opacity:100%}
+  100% {opacity:0%; display:none}
+}
+
+.btnYesAnim {
+  animation-name: escalar;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes escalar {
+  0%   {font-size:35px}
+  50%  {font-size:50px}
+  100% {font-size:35px}
+}
+
+
+
+canvas{
+	display:block;
+	position:absolute;
+	z-index:2;
+	
+	animation-name: desaparecer;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-delay: 7s;
+	animation-fill-mode: forwards;
+}
+
+html,body{
+  height:100%;
+}
+
+.bg_heart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+	z-index:-10;
+	background-color:#FEF9E7;
+ }
+
+.heart {
+    position: absolute;
+    top: -50%;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -m-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+ }
+
+.heart:before {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: 100%;
+}
+
+.heart:after {
+    position: absolute;
+    top: 0;
+    right: -50%;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: 100%;
+}
+
+@-webkit-keyframes love {
+  0%{top:110%}
+}
+@-moz-keyframes love {
+  0%{top:110%}
+}
+@-ms-keyframes love {
+  0%{top:110%}
+}
+@keyframes love {
+  0%{top:110%}
+}
